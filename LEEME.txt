@@ -1,0 +1,17 @@
+SUPER DOLORES - SuperApp (Manual TDD, Desarrollo Movil Integral, UTNG)
+
+Opcion rapida (PowerShell):
+  1) Descomprime el zip.
+  2) Abre PowerShell dentro de la carpeta super_dolores y ejecuta:
+       Set-ExecutionPolicy -Scope Process Bypass
+       .\paso1_ROJO.ps1     -> crea el proyecto y muestra las pruebas en ROJO
+       .\paso2_VERDE.ps1    -> copia el codigo y muestra las pruebas en VERDE
+  3) Para abrir la app:  cd ..\super_dolores_app ; flutter run
+
+Opcion manual:
+  flutter create super_dolores
+  Copia pubspec.yaml, lib\ y test\ encima (reemplazando).
+  Borra test\widget_test.dart (el que crea Flutter, usa MyApp y ya no existe).
+  flutter test   /   flutter run
+
+Archivos de prueba: dominio_test (30), retencion_test (31), servicios_test (21), vms_test (22) = 104 pruebas.
