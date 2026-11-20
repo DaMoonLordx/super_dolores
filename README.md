@@ -1,31 +1,4 @@
-# 🌮 Super Dolores · Evidencia de pruebas (TDD)
-
-Capturas de la terminal que documentan el ciclo **ROJO → VERDE** del proyecto `super_dolores` (Flutter), una SuperApp didáctica con mensajería, pagos, comercio y transporte.
-
-- ❌ **ROJO**: la prueba falla porque el código todavía no existe.
-- ✅ **VERDE**: con el código mínimo, la prueba pasa.
-
-> Simulación didáctica: no mueve dinero real ni transporta personas.
-
-> ⚠️ **Nota:** las capturas **08** (`vms_test`) y **09** (suite completa) reproducen una corrida real de `flutter test` (22 y 104 pruebas). Las demás (01–07) son **simuladas** con el mismo formato; sus conteos salen del manual y los ROJOS ilustran el fallo esperado.
-
-## Resumen
-
-| # | Archivo de pruebas | Resultado |
-|---|--------------------|-----------|
-| 1 | `dominio_test.dart` | ROJO ❌ |
-| 2 | `dominio_test.dart` | VERDE ✅ (30 pruebas) |
-| 3 | `servicios_test.dart` | ROJO ❌ |
-| 4 | `servicios_test.dart` | VERDE ✅ (21 pruebas) |
-| 5 | `retencion_test.dart` | ROJO ❌ |
-| 6 | `retencion_test.dart` | VERDE ✅ (31 pruebas) |
-| 7 | `vms_test.dart` | ROJO ❌ |
-| 8 | `vms_test.dart` | VERDE ✅ (22 pruebas) |
-| 9 | Suite completa | VERDE ✅ (104 pruebas) |
-
----
-
-Cada captura va en orden: archivo de pruebas, resultado (ROJO = falla, VERDE = pasa) y la imagen.
+#Super Dolores
 
 ## 1. Archivo `dominio_test.dart` (Rondas 2–5 y 8: dinero, monedero, eventos, mensajería, permisos)
 **Resultado: ROJO ❌** — Falla: todavía no existen los archivos de `lib/dominio/` (`dinero.dart`, `excepciones.dart`, `eventos.dart`, `monedero.dart`, `mensajeria.dart`, `plataforma.dart`, `transporte.dart`).
